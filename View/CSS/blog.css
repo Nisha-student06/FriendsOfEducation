@@ -1,0 +1,58 @@
+/* Hero Section */
+.blog-hero {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+              url('../IMAGES/blog-banner.jpg') no-repeat center center/cover;
+  color: #fff;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.blog-hero h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.blog-hero p {
+  font-size: 18px;
+}
+
+/* Blog Cards */
+.blog .card {
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.btn-outline-orange {
+  border: 1px solid #ff6600;
+  color: #ff6600;
+}
+
+.btn-outline-orange:hover {
+  background: #ff6600;
+  color: #fff;
+}
+
+/* Footer Styling */
+.footer {
+  background: #222;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.footer a {
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #ff6600;
+}
+

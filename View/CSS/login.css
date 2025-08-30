@@ -1,0 +1,22 @@
+body {
+  background: #f9f9f9;
+}
+
+.login-section {
+  height: 100vh;
+  margin-top: 56px;
+}
+
+.login-box {
+  width: 100%;
+  max-width: 400px;
+}
+
+.btn-primary {
+  background: #ff6600;
+  border: none;
+}
+
+.btn-primary:hover {
+  background: #e65c00;
+}

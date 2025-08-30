@@ -1,0 +1,233 @@
+/* General Body Styling */
+body {
+  padding-top: 80px; /* Adjust based on header height */
+  font-family: "Times New Roman", Times, serif;
+  background-color: #fffdf9;
+  color: #222;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Utility Classes */
+.text-orange {
+  color: #ff6600 !important;
+}
+
+.bg-orange {
+  background-color: #ff6600 !important;
+}
+
+/* Hero Section with Slider */
+.hero-section {
+  position: relative;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  transition: background-image 1s ease-in-out;
+  overflow: hidden;
+}
+
+/* Overlay for text readability */
+.hero-section .overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: 1;
+}
+
+/* Keep text above overlay */
+.hero-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Arrows */
+.hero-prev, .hero-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 102, 0, 0.8);
+  border: none;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 3;
+  transition: background 0.3s;
+}
+
+.hero-prev:hover, .hero-next:hover {
+  background: #e05500;
+}
+
+.hero-prev { left: 20px; }
+.hero-next { right: 20px; }
+
+/* Dots */
+.hero-dots {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 3;
+}
+
+.hero-dots span {
+  width: 12px;
+  height: 12px;
+  background: rgba(255,255,255,0.7);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.hero-dots span.active {
+  background: #ff6600;
+}
+
+
+/* About Section */
+#about h2 {
+  font-weight: bold;
+  color: #ff6600;
+}
+
+#about p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #333;
+}
+
+/* Vision & Mission */
+#about + section {
+  background: #f9f9f9;
+}
+
+#about + section h2 {
+  font-weight: bold;
+  color: #ff6600;
+}
+
+#about + section p {
+  max-width: 800px;
+  margin: auto;
+  font-size: 17px;
+  line-height: 1.8;
+  color: #444;
+}
+
+/* What We Do (Services) */
+#services h2 {
+  font-weight: bold;
+}
+
+#services i {
+  color: #ff6600;
+  transition: transform 0.3s;
+}
+
+#services i:hover {
+  transform: scale(1.2);
+}
+
+#services h5 {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Success Stories */
+#success-stories h2 {
+  font-weight: bold;
+}
+
+#success-stories .shadow {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#success-stories .shadow:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+#success-stories img {
+  max-height: 200px;
+  object-fit: cover;
+}
+
+/* Gallery */
+#gallery img {
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+#gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+/* Impact Counters */
+.bg-orange .fw-bold {
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+/* Volunteer CTA */
+#volunteer h2 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#volunteer p {
+  font-size: 16px;
+}
+
+/* Partners */
+#partners img {
+  max-height: 80px;
+  margin: 10px;
+  opacity: 0.8;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+#partners img:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+/* Testimonials */
+#testimonials h2 {
+  font-weight: bold;
+}
+
+#testimonials .shadow {
+  background: #fff;
+  border: 1px solid #eee;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#testimonials .shadow:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+/* Facebook Updates (if used) */
+#facebook-updates h2 {
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.fb-page {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+}

@@ -1,0 +1,64 @@
+/* Hero Section */
+.contact-hero {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+              url('../IMAGES/contact-banner.jpg') no-repeat center center/cover;
+  color: #fff;
+  padding: 100px 20px;
+  margin-top: 56px;
+}
+
+.contact-hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.text-orange {
+  color: #ff6600 !important;
+}
+
+.btn-donate {
+  background: #ff6600;
+  color: #fff;
+  border-radius: 30px;
+  padding: 10px 20px;
+  transition: 0.3s;
+}
+
+.btn-donate:hover {
+  background: #e65c00;
+}
+
+/* Contact Section */
+.contact-section .card {
+  border: none;
+  border-radius: 15px;
+}
+
+.contact-section input,
+.contact-section textarea {
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  padding: 12px;
+}
+
+.contact-section input:focus,
+.contact-section textarea:focus {
+  border-color: #ff6600;
+  box-shadow: 0 0 0 0.2rem rgba(255,102,0,0.25);
+}
+
+/* Footer Styling */
+.footer {
+  background: #222;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.footer a {
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #ff6600;
+}

@@ -1,0 +1,78 @@
+/* === General === */
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+}
+
+
+
+/* === Page Header (Banner) === */
+header {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+header::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.5);
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header h1 {
+  font-size: 2.8rem;
+  color: #fff;
+}
+
+header p {
+  color: #eee;
+}
+
+/* === Programs Section === */
+.card {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+  height: 220px;
+  object-fit: cover;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.card-title {
+  color: #ff6600;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* Footer Styling */
+.footer {
+  background: #222;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.footer a {
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #ff6600;
+}
+

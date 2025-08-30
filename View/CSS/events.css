@@ -1,0 +1,92 @@
+/* Hero Banner */
+.events-hero {
+  background: url("../IMAGES/events-banner.jpg") no-repeat center center/cover;
+  height: 50vh;
+  text-align: center;
+  position: relative;
+}
+.events-hero::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+.events-hero .text-center {
+  position: relative;
+  z-index: 1;
+}
+
+/* Timeline */
+.timeline {
+  position: relative;
+  margin: 0 auto;
+  padding: 20px 0;
+  width: 90%;
+}
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background: #f57c00;
+  top: 0; bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+.timeline-item {
+  padding: 20px;
+  position: relative;
+  width: 50%;
+}
+.timeline-item.left { left: 0; }
+.timeline-item.right { left: 50%; }
+.timeline-content {
+  background: #fff;
+  border-radius: 10px;
+  position: relative;
+}
+.timeline-item.left .timeline-content {
+  margin-right: auto;
+}
+.timeline-item.right .timeline-content {
+  margin-left: auto;
+}
+
+/* Dates */
+.date {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #f57c00;
+}
+
+/* Past Events */
+.past-event img {
+  max-height: 250px;
+  object-fit: cover;
+}
+
+/* Buttons */
+.btn-orange {
+  background: #f57c00;
+  color: #fff;
+}
+.btn-orange:hover {
+  background: #e56c00;
+  color: #fff;
+}
+
+/* Footer Styling */
+.footer {
+  background: #222;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.footer a {
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #ff6600;
+}
